@@ -1,5 +1,8 @@
 
+"""
+Example strategy that just creates evenly weighted baskets of all available stocks at any time.
 
+"""
 class StrategyNFixedBaskets:
 
     def __init__(self, args=None) -> None:
