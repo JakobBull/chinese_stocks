@@ -23,3 +23,7 @@ Then activate the environment
 Install the requirements:
 
 `conda install --file requirements.txt`
+
+Once you are set up please refrain from working in the main branch, instead run:
+
+`git checkout -b {insert-name}` with a branch name of your choice
