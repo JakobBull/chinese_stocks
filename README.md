@@ -8,6 +8,12 @@ Written by Jakob Bull, Patrick Dickinson, and Zachary Parsons for info contact <
 
 To quickly get setup follow these steps in a Terminal:
 
+cd into a file location of your choice amd run:
+
+`git clone https://github.com/JakobBull/chinese_stocks.git`
+
+Once you are cloned into the repo
+
 `conda create --name stocks`
 
 Then activate the environment
