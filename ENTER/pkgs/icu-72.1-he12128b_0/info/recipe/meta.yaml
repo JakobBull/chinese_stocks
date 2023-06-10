@@ -1,0 +1,67 @@
+# This file created by conda-build 3.23.3
+# meta.yaml template originally from:
+# /Users/runner/work/1/s/recipe, last modified Mon Mar 20 12:05:07 2023
+# ------------------------------------------------
+
+package:
+  name: icu
+  version: '72.1'
+source:
+  - patches:
+      - 2250.patch
+      - mach-port-t.patch
+    sha256: a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68
+    url: https://github.com/unicode-org/icu/releases/download/release-72-1/icu4c-72_1-src.tgz
+  - folder: source/data
+    sha256: ee19f876507d6c23d9e0a2b631096f6b0eaa6fa61728c33a89efdb55e3385dea
+    url: https://github.com/unicode-org/icu/releases/download/release-72-1/icu4c-72_1-data.zip
+build:
+  number: '0'
+  run_exports:
+    - icu >=72.1,<73.0a0
+  string: he12128b_0
+requirements:
+  build:
+    - clang_bootstrap_osx-arm64 14.0.6 hd068541_5
+    - libtool 2.4.7 hf0c8a7f_0
+    - make 4.3 h22f3db7_1
+  host: []
+  run: []
+test:
+  commands:
+    - test -f $PREFIX/lib/libicudata.a
+    - test -f $PREFIX/lib/libicudata.72.1.dylib
+    - test -f $PREFIX/lib/libicui18n.a
+    - test -f $PREFIX/lib/libicui18n.72.1.dylib
+    - test -f $PREFIX/lib/libicuio.a
+    - test -f $PREFIX/lib/libicuio.72.1.dylib
+    - test -f $PREFIX/lib/libicutest.a
+    - test -f $PREFIX/lib/libicutest.72.1.dylib
+    - test -f $PREFIX/lib/libicutu.a
+    - test -f $PREFIX/lib/libicutu.72.1.dylib
+    - test -f $PREFIX/lib/libicuuc.a
+    - test -f $PREFIX/lib/libicuuc.72.1.dylib
+    - genbrk --help
+    - gencfu --help
+    - gencnval --help
+    - gendict --help
+    - icuinfo --help
+    - icu-config --help
+    - makeconv gb-18030-2000.ucm
+  files:
+    - de.txt
+    - gb-18030-2000.ucm
+about:
+  home: http://site.icu-project.org/
+  license: MIT
+  license_file: LICENSE
+  summary: International Components for Unicode.
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - ccordoba12
+    - jakirkham
+    - msarahan
+    - ocefpaf
+    - xhochy

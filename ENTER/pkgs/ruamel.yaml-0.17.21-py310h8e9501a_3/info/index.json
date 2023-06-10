@@ -1,0 +1,18 @@
+{
+  "arch": "arm64",
+  "build": "py310h8e9501a_3",
+  "build_number": 3,
+  "depends": [
+    "python >=3.10,<3.11.0a0",
+    "python >=3.10,<3.11.0a0 *_cpython",
+    "python_abi 3.10.* *_cp310",
+    "ruamel.yaml.clib >=0.1.2",
+    "setuptools"
+  ],
+  "license": "MIT",
+  "name": "ruamel.yaml",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1678273344445,
+  "version": "0.17.21"
+}

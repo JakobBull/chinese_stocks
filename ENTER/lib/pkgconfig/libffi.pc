@@ -1,0 +1,11 @@
+prefix=/Users/jakobbull/Documents/Yenching/Financial Econometrics/project/ENTER
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}
+includedir=/Users/jakobbull/Documents/Yenching/Financial Econometrics/project/ENTER/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.4.2
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}

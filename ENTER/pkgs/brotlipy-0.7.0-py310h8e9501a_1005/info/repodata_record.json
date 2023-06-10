@@ -1,0 +1,24 @@
+{
+    "arch": "arm64",
+    "build": "py310h8e9501a_1005",
+    "build_number": 1005,
+    "channel": "conda-forge",
+    "depends": [
+        "cffi >=1.0.0",
+        "python >=3.10,<3.11.0a0",
+        "python >=3.10,<3.11.0a0 *_cpython",
+        "python_abi 3.10.* *_cp310"
+    ],
+    "fn": "brotlipy-0.7.0-py310h8e9501a_1005.tar.bz2",
+    "license": "MIT",
+    "license_family": "MIT",
+    "md5": "0dfdc1c2e2fa6d9a1cee4798a9e9454d",
+    "name": "brotlipy",
+    "platform": "osx",
+    "sha256": "107d892f27cca4570386640c16f57a7564496a18ea643e5114db9efd96738a86",
+    "size": 359113,
+    "subdir": "osx-arm64",
+    "timestamp": 1666765206745,
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/brotlipy-0.7.0-py310h8e9501a_1005.tar.bz2",
+    "version": "0.7.0"
+}

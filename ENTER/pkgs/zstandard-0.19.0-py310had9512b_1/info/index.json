@@ -1,0 +1,18 @@
+{
+  "arch": "arm64",
+  "build": "py310had9512b_1",
+  "build_number": 1,
+  "depends": [
+    "cffi >=1.11",
+    "python >=3.10,<3.11.0a0",
+    "python >=3.10,<3.11.0a0 *_cpython",
+    "python_abi 3.10.* *_cp310",
+    "zstd >=1.5.2,<1.6.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "name": "zstandard",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1668976125815,
+  "version": "0.19.0"
+}

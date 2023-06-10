@@ -1,0 +1,12 @@
+{
+  "arch": "arm64",
+  "build": "he12128b_0",
+  "build_number": 0,
+  "depends": [],
+  "license": "MIT",
+  "name": "icu",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1679315525149,
+  "version": "72.1"
+}

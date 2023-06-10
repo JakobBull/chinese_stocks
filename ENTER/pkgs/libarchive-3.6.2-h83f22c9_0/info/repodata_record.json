@@ -1,0 +1,29 @@
+{
+    "arch": "arm64",
+    "build": "h83f22c9_0",
+    "build_number": 0,
+    "channel": "conda-forge",
+    "depends": [
+        "bzip2 >=1.0.8,<2.0a0",
+        "libiconv >=1.17,<2.0a0",
+        "libxml2 >=2.10.3,<2.11.0a0",
+        "libzlib >=1.2.13,<1.3.0a0",
+        "lz4-c >=1.9.3,<1.10.0a0",
+        "lzo >=2.10,<3.0a0",
+        "openssl >=3.0.7,<4.0a0",
+        "xz >=5.2.6,<6.0a0",
+        "zstd >=1.5.2,<1.6.0a0"
+    ],
+    "fn": "libarchive-3.6.2-h83f22c9_0.conda",
+    "license": "BSD-2-Clause",
+    "license_family": "BSD",
+    "md5": "8b59d0f34c4d4db0ee668a5900cc406d",
+    "name": "libarchive",
+    "platform": "osx",
+    "sha256": "206ce820b93f935b8ab2520d01db13da7beb27ba291ef9a98696e92b0cf9dbae",
+    "size": 751665,
+    "subdir": "osx-arm64",
+    "timestamp": 1670871316527,
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libarchive-3.6.2-h83f22c9_0.conda",
+    "version": "3.6.2"
+}

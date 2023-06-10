@@ -1,0 +1,47 @@
+# This file created by conda-build 3.23.3
+# ------------------------------------------------
+
+package:
+  name: openssl
+  version: 3.1.0
+source:
+  sha256: aaa925ad9828745c4cad9d9efeb273deca820f2cdcf2c3ac7d7c1212b7c497b4
+  url: http://www.openssl.org/source/openssl-3.1.0.tar.gz
+build:
+  no_link: lib/libcrypto.3.0.dylib
+  number: 0
+  run_exports:
+    - openssl >=3.1.0,<4.0a0
+  string: h03a7124_0
+requirements:
+  build:
+    - clang_bootstrap_osx-arm64 14.0.6 hd068541_4
+    - make 4.3 h22f3db7_1
+    - perl 5.32.1 2_h0d85af4_perl5
+  run:
+    - ca-certificates
+test:
+  commands:
+    - touch checksum.txt
+    - $PREFIX/bin/openssl sha256 checksum.txt
+    - pkg-config --print-errors --exact-version "3.1.0" openssl
+  requires:
+    - pkg-config
+about:
+  dev_url: https://github.com/openssl/openssl
+  doc_url: https://www.openssl.org/docs/man3.0/
+  home: http://www.openssl.org/
+  license: Apache-2.0
+  license_family: Apache
+  license_file: LICENSE.txt
+  summary: OpenSSL is an open-source implementation of the SSL and TLS protocols
+extra:
+  copy_test_source_files: true
+  feedstock-name: openssl
+  final: true
+  recipe-maintainers:
+    - h-vetinari
+    - jakirkham
+    - msarahan
+    - ocefpaf
+    - pelson

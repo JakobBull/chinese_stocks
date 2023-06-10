@@ -1,0 +1,490 @@
+{
+    "arch": "arm64",
+    "build": "hb5ab8b9_0",
+    "build_number": 0,
+    "channel": "conda-forge",
+    "depends": [
+        "libcxx >=14.0.6",
+        "libzlib >=1.2.13,<1.3.0a0"
+    ],
+    "extracted_package_dir": "/Users/jakobbull/Documents/Yenching/Financial Econometrics/project/ENTER/pkgs/libsolv-0.7.23-hb5ab8b9_0",
+    "files": [
+        "bin/conda2solv",
+        "bin/dumpsolv",
+        "bin/installcheck",
+        "bin/mergesolv",
+        "bin/repo2solv",
+        "bin/testsolv",
+        "include/solv/bitmap.h",
+        "include/solv/chksum.h",
+        "include/solv/conda.h",
+        "include/solv/dataiterator.h",
+        "include/solv/dirpool.h",
+        "include/solv/evr.h",
+        "include/solv/hash.h",
+        "include/solv/knownid.h",
+        "include/solv/policy.h",
+        "include/solv/pool.h",
+        "include/solv/poolarch.h",
+        "include/solv/poolid.h",
+        "include/solv/pooltypes.h",
+        "include/solv/poolvendor.h",
+        "include/solv/problems.h",
+        "include/solv/queue.h",
+        "include/solv/repo.h",
+        "include/solv/repo_conda.h",
+        "include/solv/repo_solv.h",
+        "include/solv/repo_write.h",
+        "include/solv/repodata.h",
+        "include/solv/rules.h",
+        "include/solv/selection.h",
+        "include/solv/solv_xfopen.h",
+        "include/solv/solvable.h",
+        "include/solv/solver.h",
+        "include/solv/solverdebug.h",
+        "include/solv/solvversion.h",
+        "include/solv/strpool.h",
+        "include/solv/testcase.h",
+        "include/solv/tools_util.h",
+        "include/solv/transaction.h",
+        "include/solv/util.h",
+        "lib/libsolv.1.dylib",
+        "lib/libsolv.dylib",
+        "lib/libsolvext.1.dylib",
+        "lib/libsolvext.dylib",
+        "lib/pkgconfig/libsolv.pc",
+        "lib/pkgconfig/libsolvext.pc",
+        "share/cmake/Modules/FindLibSolv.cmake",
+        "share/man/man1/dumpsolv.1",
+        "share/man/man1/installcheck.1",
+        "share/man/man1/mergesolv.1",
+        "share/man/man1/repo2solv.1",
+        "share/man/man1/solv.1",
+        "share/man/man1/testsolv.1",
+        "share/man/man3/libsolv-bindings.3",
+        "share/man/man3/libsolv-constantids.3",
+        "share/man/man3/libsolv-history.3",
+        "share/man/man3/libsolv-pool.3",
+        "share/man/man3/libsolv.3"
+    ],
+    "fn": "libsolv-0.7.23-hb5ab8b9_0.conda",
+    "license": "BSD-3-Clause",
+    "license_family": "BSD",
+    "link": {
+        "source": "/Users/jakobbull/Documents/Yenching/Financial Econometrics/project/ENTER/pkgs/libsolv-0.7.23-hb5ab8b9_0",
+        "type": 1
+    },
+    "md5": "5969086c3e60b8be805f1878816330d1",
+    "name": "libsolv",
+    "package_tarball_full_path": "/Users/jakobbull/Documents/Yenching/Financial Econometrics/project/ENTER/pkgs/libsolv-0.7.23-hb5ab8b9_0.tar.bz2",
+    "paths_data": {
+        "paths": [
+            {
+                "_path": "bin/conda2solv",
+                "path_type": "hardlink",
+                "sha256": "de0e8caa3c1463cb0054d8c66d52de62584e42d45f8368eb89a1fe382738e70c",
+                "sha256_in_prefix": "de0e8caa3c1463cb0054d8c66d52de62584e42d45f8368eb89a1fe382738e70c",
+                "size_in_bytes": 53040
+            },
+            {
+                "_path": "bin/dumpsolv",
+                "path_type": "hardlink",
+                "sha256": "ab477430c97823d8974c0ee8a6c3e6edd362c4ef13d787a9e78d04d98748cf52",
+                "sha256_in_prefix": "ab477430c97823d8974c0ee8a6c3e6edd362c4ef13d787a9e78d04d98748cf52",
+                "size_in_bytes": 53600
+            },
+            {
+                "_path": "bin/installcheck",
+                "path_type": "hardlink",
+                "sha256": "3a5747fa85b57e78ed11b6717df193649d37e6772c5538e91d4f488eb8922d12",
+                "sha256_in_prefix": "3a5747fa85b57e78ed11b6717df193649d37e6772c5538e91d4f488eb8922d12",
+                "size_in_bytes": 53456
+            },
+            {
+                "_path": "bin/mergesolv",
+                "path_type": "hardlink",
+                "sha256": "6ff7eb80f8518f81d7e3a50e192dc06050116b66e8c63d17db8d336c8daaba4e",
+                "sha256_in_prefix": "6ff7eb80f8518f81d7e3a50e192dc06050116b66e8c63d17db8d336c8daaba4e",
+                "size_in_bytes": 53264
+            },
+            {
+                "_path": "bin/repo2solv",
+                "path_type": "hardlink",
+                "sha256": "5cd36ed9075eb17f5cd183d0af8ba094cfb24085d4bfd4370e81abe329e7f8c5",
+                "sha256_in_prefix": "5cd36ed9075eb17f5cd183d0af8ba094cfb24085d4bfd4370e81abe329e7f8c5",
+                "size_in_bytes": 52528
+            },
+            {
+                "_path": "bin/testsolv",
+                "path_type": "hardlink",
+                "sha256": "7466392f72e304442fe01f937e09f00b27893708e34c1e22c6f5af1b414b0f2a",
+                "sha256_in_prefix": "7466392f72e304442fe01f937e09f00b27893708e34c1e22c6f5af1b414b0f2a",
+                "size_in_bytes": 55472
+            },
+            {
+                "_path": "include/solv/bitmap.h",
+                "path_type": "hardlink",
+                "sha256": "b3fa6d991875e1a2b2800c854697c722580ab6802c9d3840e302382b0fce919e",
+                "sha256_in_prefix": "b3fa6d991875e1a2b2800c854697c722580ab6802c9d3840e302382b0fce919e",
+                "size_in_bytes": 1555
+            },
+            {
+                "_path": "include/solv/chksum.h",
+                "path_type": "hardlink",
+                "sha256": "55602f07eb12c868ef3a3b0a580db3255738432a6edd0a47b5c0637a3c8eedd3",
+                "sha256_in_prefix": "55602f07eb12c868ef3a3b0a580db3255738432a6edd0a47b5c0637a3c8eedd3",
+                "size_in_bytes": 1190
+            },
+            {
+                "_path": "include/solv/conda.h",
+                "path_type": "hardlink",
+                "sha256": "73743479ac4ca9b480f0ff8b3295477ff206f3db835cbb4ba26e744e7a4f6fa2",
+                "sha256_in_prefix": "73743479ac4ca9b480f0ff8b3295477ff206f3db835cbb4ba26e744e7a4f6fa2",
+                "size_in_bytes": 523
+            },
+            {
+                "_path": "include/solv/dataiterator.h",
+                "path_type": "hardlink",
+                "sha256": "1435f5c9c1e7ed1936de504c2b332c888c87458f1bd7351a7b39f52c600107f0",
+                "sha256_in_prefix": "1435f5c9c1e7ed1936de504c2b332c888c87458f1bd7351a7b39f52c600107f0",
+                "size_in_bytes": 5106
+            },
+            {
+                "_path": "include/solv/dirpool.h",
+                "path_type": "hardlink",
+                "sha256": "ca20c07c0b5e6ccf6b4380463de9f1420251906eed00746c96b95ccaf04dcf8a",
+                "sha256_in_prefix": "ca20c07c0b5e6ccf6b4380463de9f1420251906eed00746c96b95ccaf04dcf8a",
+                "size_in_bytes": 1712
+            },
+            {
+                "_path": "include/solv/evr.h",
+                "path_type": "hardlink",
+                "sha256": "629da0ed74bdc88c0d766843a15f1c21502dc1b62842f3e2067b26fed889bc99",
+                "sha256_in_prefix": "629da0ed74bdc88c0d766843a15f1c21502dc1b62842f3e2067b26fed889bc99",
+                "size_in_bytes": 815
+            },
+            {
+                "_path": "include/solv/hash.h",
+                "path_type": "hardlink",
+                "sha256": "3741802a625392b70befc4c26c4cf314354104dbcda9ef7ae38eabe06512b451",
+                "sha256_in_prefix": "3741802a625392b70befc4c26c4cf314354104dbcda9ef7ae38eabe06512b451",
+                "size_in_bytes": 1604
+            },
+            {
+                "_path": "include/solv/knownid.h",
+                "path_type": "hardlink",
+                "sha256": "6027ad1996cf04e59b6fd68c83233b3d223c1a5ff3a4eeff8c35f0babaaf343a",
+                "sha256_in_prefix": "6027ad1996cf04e59b6fd68c83233b3d223c1a5ff3a4eeff8c35f0babaaf343a",
+                "size_in_bytes": 14014
+            },
+            {
+                "_path": "include/solv/policy.h",
+                "path_type": "hardlink",
+                "sha256": "d945789cd68d4bafc46fd16564ba6d28affd785ef70bb8d643731501b75cb2a9",
+                "sha256_in_prefix": "d945789cd68d4bafc46fd16564ba6d28affd785ef70bb8d643731501b75cb2a9",
+                "size_in_bytes": 1740
+            },
+            {
+                "_path": "include/solv/pool.h",
+                "path_type": "hardlink",
+                "sha256": "b9a35a90470d921c84422df4f59c7a6ab3e08614772972a3526cd6dc5b96517d",
+                "sha256_in_prefix": "b9a35a90470d921c84422df4f59c7a6ab3e08614772972a3526cd6dc5b96517d",
+                "size_in_bytes": 14101
+            },
+            {
+                "_path": "include/solv/poolarch.h",
+                "path_type": "hardlink",
+                "sha256": "9849f634990237148e37b5c6daa8b82421bbfe0bc9de383e562133b8c26bd751",
+                "sha256_in_prefix": "9849f634990237148e37b5c6daa8b82421bbfe0bc9de383e562133b8c26bd751",
+                "size_in_bytes": 1242
+            },
+            {
+                "_path": "include/solv/poolid.h",
+                "path_type": "hardlink",
+                "sha256": "c7c111d28e711e67cf93a756b886207418c09e7ddd6b475c28c9a122a93c97f9",
+                "sha256_in_prefix": "c7c111d28e711e67cf93a756b886207418c09e7ddd6b475c28c9a122a93c97f9",
+                "size_in_bytes": 1188
+            },
+            {
+                "_path": "include/solv/pooltypes.h",
+                "path_type": "hardlink",
+                "sha256": "0f9f861bd31c8096a954e25077ae88c81fcac728d957aa267e6729e2f14246ce",
+                "sha256_in_prefix": "0f9f861bd31c8096a954e25077ae88c81fcac728d957aa267e6729e2f14246ce",
+                "size_in_bytes": 1015
+            },
+            {
+                "_path": "include/solv/poolvendor.h",
+                "path_type": "hardlink",
+                "sha256": "041cc351042f17c1d94bec538492f06e877d21720eb1da3f570a987849d35658",
+                "sha256_in_prefix": "041cc351042f17c1d94bec538492f06e877d21720eb1da3f570a987849d35658",
+                "size_in_bytes": 499
+            },
+            {
+                "_path": "include/solv/problems.h",
+                "path_type": "hardlink",
+                "sha256": "828f69130b3869785c1ace6543d14db3b2c975555dd2e0ef01faef765f93b2db",
+                "sha256_in_prefix": "828f69130b3869785c1ace6543d14db3b2c975555dd2e0ef01faef765f93b2db",
+                "size_in_bytes": 2150
+            },
+            {
+                "_path": "include/solv/queue.h",
+                "path_type": "hardlink",
+                "sha256": "3b9d3e41ae15c3643a5c45de1498b9c719eba36cb5377ef94d2d211fdc9ddca6",
+                "sha256_in_prefix": "3b9d3e41ae15c3643a5c45de1498b9c719eba36cb5377ef94d2d211fdc9ddca6",
+                "size_in_bytes": 2469
+            },
+            {
+                "_path": "include/solv/repo.h",
+                "path_type": "hardlink",
+                "sha256": "1725255624fbb6521e3c74271b88d9d5016e55082f4ae22431506228f9be269f",
+                "sha256_in_prefix": "1725255624fbb6521e3c74271b88d9d5016e55082f4ae22431506228f9be269f",
+                "size_in_bytes": 8039
+            },
+            {
+                "_path": "include/solv/repo_conda.h",
+                "path_type": "hardlink",
+                "sha256": "63dec2db5cb979d2fd55025e0945de7eba1fef9403e6f11f57cc74a26396993a",
+                "sha256_in_prefix": "63dec2db5cb979d2fd55025e0945de7eba1fef9403e6f11f57cc74a26396993a",
+                "size_in_bytes": 289
+            },
+            {
+                "_path": "include/solv/repo_solv.h",
+                "path_type": "hardlink",
+                "sha256": "f80c429f1b3f1fbc6d0c7a8068d7746dbad1c327c6290e1a03f1234bc18a4a46",
+                "sha256_in_prefix": "f80c429f1b3f1fbc6d0c7a8068d7746dbad1c327c6290e1a03f1234bc18a4a46",
+                "size_in_bytes": 557
+            },
+            {
+                "_path": "include/solv/repo_write.h",
+                "path_type": "hardlink",
+                "sha256": "c6c5cf3ee8c8cb9361fd3e76d52da2f9117c61c70a8c3b9535656749620d0bc7",
+                "sha256_in_prefix": "c6c5cf3ee8c8cb9361fd3e76d52da2f9117c61c70a8c3b9535656749620d0bc7",
+                "size_in_bytes": 1973
+            },
+            {
+                "_path": "include/solv/repodata.h",
+                "path_type": "hardlink",
+                "sha256": "621d5d837b8f50dc3295368ac1d81e11084a34cb744cf3d6b5f8138852f364df",
+                "sha256_in_prefix": "621d5d837b8f50dc3295368ac1d81e11084a34cb744cf3d6b5f8138852f364df",
+                "size_in_bytes": 12213
+            },
+            {
+                "_path": "include/solv/rules.h",
+                "path_type": "hardlink",
+                "sha256": "95403db9da34b7e4195474a7f38b31e84089bb1203a8137aa1c3de598f94ee71",
+                "sha256_in_prefix": "95403db9da34b7e4195474a7f38b31e84089bb1203a8137aa1c3de598f94ee71",
+                "size_in_bytes": 6586
+            },
+            {
+                "_path": "include/solv/selection.h",
+                "path_type": "hardlink",
+                "sha256": "2aab66c59706f46bc1575c32d0163f838abf71b895248eb1eb3f862d4ccc4a88",
+                "sha256_in_prefix": "2aab66c59706f46bc1575c32d0163f838abf71b895248eb1eb3f862d4ccc4a88",
+                "size_in_bytes": 2612
+            },
+            {
+                "_path": "include/solv/solv_xfopen.h",
+                "path_type": "hardlink",
+                "sha256": "60c1fb8f156934540598405645269f6c92969b98c121276cda12a9696a5e4b8b",
+                "sha256_in_prefix": "60c1fb8f156934540598405645269f6c92969b98c121276cda12a9696a5e4b8b",
+                "size_in_bytes": 553
+            },
+            {
+                "_path": "include/solv/solvable.h",
+                "path_type": "hardlink",
+                "sha256": "1cf167edad462ca37aa0f93ea5f7cbbd265ca0cd66a846e2ecdf474eab0d5f5c",
+                "sha256_in_prefix": "1cf167edad462ca37aa0f93ea5f7cbbd265ca0cd66a846e2ecdf474eab0d5f5c",
+                "size_in_bytes": 3964
+            },
+            {
+                "_path": "include/solv/solver.h",
+                "path_type": "hardlink",
+                "sha256": "381c59300a0865be9a0727a5d028b1f3de34a1ccb8e362182d20e2e116ae1c87",
+                "sha256_in_prefix": "381c59300a0865be9a0727a5d028b1f3de34a1ccb8e362182d20e2e116ae1c87",
+                "size_in_bytes": 18086
+            },
+            {
+                "_path": "include/solv/solverdebug.h",
+                "path_type": "hardlink",
+                "sha256": "5637cc7d15d39a5b17321c766fb52946d9c4fe9c0201f5ffec314272bd67e56b",
+                "sha256_in_prefix": "5637cc7d15d39a5b17321c766fb52946d9c4fe9c0201f5ffec314272bd67e56b",
+                "size_in_bytes": 1269
+            },
+            {
+                "_path": "include/solv/solvversion.h",
+                "path_type": "hardlink",
+                "sha256": "5aefd531cdb5b8919e418dbb81190308a1ca74d0e37fee72c9fe17a007a5671d",
+                "sha256_in_prefix": "5aefd531cdb5b8919e418dbb81190308a1ca74d0e37fee72c9fe17a007a5671d",
+                "size_in_bytes": 1620
+            },
+            {
+                "_path": "include/solv/strpool.h",
+                "path_type": "hardlink",
+                "sha256": "7ff36f90d02702132563f4b56dbe1742ca5b638da28d9b1c80a138ed162d4e4a",
+                "sha256_in_prefix": "7ff36f90d02702132563f4b56dbe1742ca5b638da28d9b1c80a138ed162d4e4a",
+                "size_in_bytes": 1477
+            },
+            {
+                "_path": "include/solv/testcase.h",
+                "path_type": "hardlink",
+                "sha256": "54440605f766cb6ca33fa89ab33cc04a1ae6648e6ce7452c307f2ad31b802111",
+                "sha256_in_prefix": "54440605f766cb6ca33fa89ab33cc04a1ae6648e6ce7452c307f2ad31b802111",
+                "size_in_bytes": 2165
+            },
+            {
+                "_path": "include/solv/tools_util.h",
+                "path_type": "hardlink",
+                "sha256": "40f18645bd32235a42d0247a088c17428172f423473931e58638dc16e51e0d79",
+                "sha256_in_prefix": "40f18645bd32235a42d0247a088c17428172f423473931e58638dc16e51e0d79",
+                "size_in_bytes": 1642
+            },
+            {
+                "_path": "include/solv/transaction.h",
+                "path_type": "hardlink",
+                "sha256": "91278d66126775d89b42d836563a767fb5f30698d86af1f10e42eba992f4cc26",
+                "sha256_in_prefix": "91278d66126775d89b42d836563a767fb5f30698d86af1f10e42eba992f4cc26",
+                "size_in_bytes": 4867
+            },
+            {
+                "_path": "include/solv/util.h",
+                "path_type": "hardlink",
+                "sha256": "7d6a53f5dd6e00ee916dc5cd7fce0477f8dc8b4bde71081c713df56341f14617",
+                "sha256_in_prefix": "7d6a53f5dd6e00ee916dc5cd7fce0477f8dc8b4bde71081c713df56341f14617",
+                "size_in_bytes": 3141
+            },
+            {
+                "_path": "lib/libsolv.1.dylib",
+                "path_type": "hardlink",
+                "sha256": "802ef48a8ce069494e22a87d93c2b7509d4d1fd1b4da0ad88e102e7894039d16",
+                "sha256_in_prefix": "802ef48a8ce069494e22a87d93c2b7509d4d1fd1b4da0ad88e102e7894039d16",
+                "size_in_bytes": 573184
+            },
+            {
+                "_path": "lib/libsolv.dylib",
+                "path_type": "softlink",
+                "sha256_in_prefix": "802ef48a8ce069494e22a87d93c2b7509d4d1fd1b4da0ad88e102e7894039d16",
+                "size_in_bytes": 573184
+            },
+            {
+                "_path": "lib/libsolvext.1.dylib",
+                "path_type": "hardlink",
+                "sha256": "d85cf262aeaa2307d679b5ae242d12993c7db297eec34e03c988c02deaaab486",
+                "sha256_in_prefix": "d85cf262aeaa2307d679b5ae242d12993c7db297eec34e03c988c02deaaab486",
+                "size_in_bytes": 130416
+            },
+            {
+                "_path": "lib/libsolvext.dylib",
+                "path_type": "softlink",
+                "sha256_in_prefix": "d85cf262aeaa2307d679b5ae242d12993c7db297eec34e03c988c02deaaab486",
+                "size_in_bytes": 130416
+            },
+            {
+                "_path": "lib/pkgconfig/libsolv.pc",
+                "path_type": "hardlink",
+                "sha256": "0af991613245e1636a24b7164c83b7f3b2d02755c499d21d4e846edc79d00e1e",
+                "sha256_in_prefix": "0545c8a7cece97d65e6a0ceb0ddf2eee53820a55260b4bbc50b391a4c548d844",
+                "size_in_bytes": 664
+            },
+            {
+                "_path": "lib/pkgconfig/libsolvext.pc",
+                "path_type": "hardlink",
+                "sha256": "6977c7a854a204940b018f693c905563848d3d9c9d5d52abcbabfb264713c7dd",
+                "sha256_in_prefix": "b09c8680ad4caa6cf5aebf84605ca1e3e92ce730d95d517b83a30def80966b62",
+                "size_in_bytes": 692
+            },
+            {
+                "_path": "share/cmake/Modules/FindLibSolv.cmake",
+                "path_type": "hardlink",
+                "sha256": "2f81f106b402b02fb6486878eed2481db01c61075b725d59e5f65dc301f72802",
+                "sha256_in_prefix": "2f81f106b402b02fb6486878eed2481db01c61075b725d59e5f65dc301f72802",
+                "size_in_bytes": 3182
+            },
+            {
+                "_path": "share/man/man1/dumpsolv.1",
+                "path_type": "hardlink",
+                "sha256": "5c4181b65d0b35f82845035cc53dbd15b20e1020e499fcce3c8ae6b68c2ffa2e",
+                "sha256_in_prefix": "5c4181b65d0b35f82845035cc53dbd15b20e1020e499fcce3c8ae6b68c2ffa2e",
+                "size_in_bytes": 1618
+            },
+            {
+                "_path": "share/man/man1/installcheck.1",
+                "path_type": "hardlink",
+                "sha256": "a96dcb2fdec31c87dd9c8b9f24e66fce9233939bdfee2a08c1b5247a190152e2",
+                "sha256_in_prefix": "a96dcb2fdec31c87dd9c8b9f24e66fce9233939bdfee2a08c1b5247a190152e2",
+                "size_in_bytes": 2024
+            },
+            {
+                "_path": "share/man/man1/mergesolv.1",
+                "path_type": "hardlink",
+                "sha256": "a391bdb50abab0a1448707ef5597bb33252b4e1d8b512f7e69a98eddf1992b4d",
+                "sha256_in_prefix": "a391bdb50abab0a1448707ef5597bb33252b4e1d8b512f7e69a98eddf1992b4d",
+                "size_in_bytes": 1645
+            },
+            {
+                "_path": "share/man/man1/repo2solv.1",
+                "path_type": "hardlink",
+                "sha256": "17a11568cc36a863433bf080729669b33d573ac44f1c0e06217bc574fd050995",
+                "sha256_in_prefix": "17a11568cc36a863433bf080729669b33d573ac44f1c0e06217bc574fd050995",
+                "size_in_bytes": 2448
+            },
+            {
+                "_path": "share/man/man1/solv.1",
+                "path_type": "hardlink",
+                "sha256": "1092a5fe6d1408eab08e98a7974f3d4c6b315a97cadbd2915d0ccff67208fb32",
+                "sha256_in_prefix": "1092a5fe6d1408eab08e98a7974f3d4c6b315a97cadbd2915d0ccff67208fb32",
+                "size_in_bytes": 2900
+            },
+            {
+                "_path": "share/man/man1/testsolv.1",
+                "path_type": "hardlink",
+                "sha256": "4248757bae7ff2c8446c72882448b4b967f3af29318dcffa17ad290e8fced967",
+                "sha256_in_prefix": "4248757bae7ff2c8446c72882448b4b967f3af29318dcffa17ad290e8fced967",
+                "size_in_bytes": 2296
+            },
+            {
+                "_path": "share/man/man3/libsolv-bindings.3",
+                "path_type": "hardlink",
+                "sha256": "110c183ccc276bcc158c825e6becd4f3e2370e9a21644dde801607c9ac769949",
+                "sha256_in_prefix": "110c183ccc276bcc158c825e6becd4f3e2370e9a21644dde801607c9ac769949",
+                "size_in_bytes": 189367
+            },
+            {
+                "_path": "share/man/man3/libsolv-constantids.3",
+                "path_type": "hardlink",
+                "sha256": "217f140750416a9c4c6b72fb5fa86fd29770feadae3633f02b25f692eb89fe7f",
+                "sha256_in_prefix": "217f140750416a9c4c6b72fb5fa86fd29770feadae3633f02b25f692eb89fe7f",
+                "size_in_bytes": 27211
+            },
+            {
+                "_path": "share/man/man3/libsolv-history.3",
+                "path_type": "hardlink",
+                "sha256": "0723ea962c38f4778ce27d83df0c4b076b81f9327594eee2d8c9e19d3a230b07",
+                "sha256_in_prefix": "0723ea962c38f4778ce27d83df0c4b076b81f9327594eee2d8c9e19d3a230b07",
+                "size_in_bytes": 7170
+            },
+            {
+                "_path": "share/man/man3/libsolv-pool.3",
+                "path_type": "hardlink",
+                "sha256": "666573df4c2fe4c5982e63cb9c595404e9d1c841a51e64930a7bcd45f4ff8873",
+                "sha256_in_prefix": "666573df4c2fe4c5982e63cb9c595404e9d1c841a51e64930a7bcd45f4ff8873",
+                "size_in_bytes": 44348
+            },
+            {
+                "_path": "share/man/man3/libsolv.3",
+                "path_type": "hardlink",
+                "sha256": "58403e02a12b1084ab17cf114bf6482815a3f3eaaea56a5ab85ffc10399c90bb",
+                "sha256_in_prefix": "58403e02a12b1084ab17cf114bf6482815a3f3eaaea56a5ab85ffc10399c90bb",
+                "size_in_bytes": 3103
+            }
+        ],
+        "paths_version": 1
+    },
+    "platform": "osx",
+    "requested_spec": "conda-forge/osx-arm64::libsolv==0.7.23=hb5ab8b9_0[md5=5969086c3e60b8be805f1878816330d1]",
+    "sha256": "d50048cfe36876ffb00fce890d4a058edfbb53abe9fbf8f51e39c899002423ad",
+    "size": 381483,
+    "subdir": "osx-arm64",
+    "timestamp": 1671055762660,
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libsolv-0.7.23-hb5ab8b9_0.conda",
+    "version": "0.7.23"
+}

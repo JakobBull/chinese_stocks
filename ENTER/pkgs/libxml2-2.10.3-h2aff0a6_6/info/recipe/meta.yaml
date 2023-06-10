@@ -1,0 +1,70 @@
+# This file created by conda-build 3.23.3
+# meta.yaml template originally from:
+# /Users/runner/work/1/s/recipe, last modified Tue Mar 21 22:09:12 2023
+# ------------------------------------------------
+
+package:
+  name: libxml2
+  version: 2.10.3
+source:
+  patches:
+    - 0002-Make-and-install-a-pkg-config-file-on-Windows.patch
+    - 0004-CVE-2017-8872.patch
+  sha256: 497f12e34790d407ec9e2a190d576c0881a1cd78ff3c8991d1f9e40281a5ff57
+  url: https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.10.3/libxml2-v2.10.3.tar.gz
+build:
+  number: '6'
+  run_exports:
+    - libxml2 >=2.10.3,<2.11.0a0
+  string: h2aff0a6_6
+requirements:
+  build:
+    - autoconf 2.71 pl5321hed12c24_1
+    - automake 1.16.5 pl5321h694c41f_0
+    - clang_bootstrap_osx-arm64 14.0.6 hd068541_5
+    - libiconv 1.17 hac89ed1_0
+    - libtool 2.4.7 hf0c8a7f_0
+    - m4 1.4.18 haf1e3a3_1001
+    - make 4.3 h22f3db7_1
+    - perl 5.32.1 2_h0d85af4_perl5
+    - pkg-config 0.29.2 ha3d46e9_1008
+  host:
+    - icu 72.1 he12128b_0
+    - libiconv 1.17 he4db4b2_0
+    - libzlib 1.2.13 h03a7124_4
+    - xz 5.2.6 h57fd34a_0
+    - zlib 1.2.13 h03a7124_4
+  run:
+    - icu >=72.1,<73.0a0
+    - libiconv >=1.17,<2.0a0
+    - libzlib >=1.2.13,<1.3.0a0
+    - xz >=5.2.6,<6.0a0
+test:
+  commands:
+    - xmllint test.xml
+  files:
+    - test.xml
+about:
+  description: 'Though libxml2 is written in C a variety of language
+
+    bindings make it available in other environments.
+
+    '
+  dev_url: https://git.gnome.org/browse/libxml2/
+  doc_source_url: https://github.com/GNOME/libxml2/blob/master/doc/index.html
+  doc_url: http://xmlsoft.org/html/index.html
+  home: http://xmlsoft.org/
+  license: MIT
+  license_family: MIT
+  license_file: Copyright
+  summary: The XML C parser and toolkit of Gnome
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - gillins
+    - jakirkham
+    - jschueller
+    - msarahan
+    - ocefpaf
+    - scopatz
