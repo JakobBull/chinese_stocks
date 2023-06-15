@@ -28,8 +28,8 @@ class StrategyLassoFactors:
                 stock_data = stock_data.drop(['Unnamed: 0', 'order_book_id', 'date'], axis=1)
                 scaler = StandardScaler()
                 stock_data = scaler.fit_transform(stock_data)
-                labels = stock_data[:, -1]
-                stock_data = stock_data[:, :-1]
+                labels = stock_data[1:, -1]
+                stock_data = stock_data[:-1, :-1]
                 lasso = Lasso(alpha=self.alpha)  # You can adjust the regularization parameter 'alpha' as needed
                 lasso.fit(stock_data, labels)
                 models[stock] = lasso
@@ -47,11 +47,11 @@ class StrategyLassoFactors:
                     predictions[stock] = None
                     labels[stock] = None
                 else:
-                    dates = stock_data['date']
+                    dates = stock_data['date'][1:]
                     stock_data = stock_data.drop(['Unnamed: 0', 'order_book_id', 'date'], axis=1)
                     stock_data = scalers[stock].transform(stock_data)
-                    label = stock_data[:, -1]
-                    stock_data = stock_data[:, :-1]
+                    label = stock_data[1:, -1]
+                    stock_data = stock_data[:-1, :-1]
                     prediction = models[stock].predict(stock_data)
                     #remap labels and predictions
                     total_labels = np.concatenate((stock_data, label[:, np.newaxis]), axis=1)
