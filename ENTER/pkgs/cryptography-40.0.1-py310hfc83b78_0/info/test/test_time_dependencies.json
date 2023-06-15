@@ -1,1 +1,0 @@
-["pytz", "hypothesis", "pretend", "pytest-subtests", "cryptography-vectors 40.0.1.*", "pytest", "pytest-benchmark", "iso8601"]
