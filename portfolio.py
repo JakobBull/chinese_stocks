@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 
-
 """
 Portfolio to generate portfolio objects.
 
@@ -19,6 +18,7 @@ class Portfolio:
         self.valid_stocks = {}
         self.stats = {}
         self.data = pd.DataFrame(columns=['date','positions', 'n_positions', 'return'])
+        self.component_returns = {}
 
     def set_valid_stocks(self, valid_stocks):
         self.valid_stocks = valid_stocks
@@ -35,7 +35,8 @@ class Portfolio:
                         if position[key] > 0:
                             print(f'Stock {key} not defined at date {date}.')
         else:
-            raise print("The position weighting does not add to 1.")
+            print("The total position weighting is:",  sum(position.values()))
+            print("The position weighting does not add to 1.")
 
     def well_defined(self):
         nones = not all(self.positions.values())
@@ -54,20 +55,22 @@ class Portfolio:
         else:
         
             #based on the positions at any given date, reweigh portfolio and calculate the portfolio return, write new row with return and key info to data DataFrame
-            for date in self.dates:
+            for date in self.dates[1:]:
                 month_positions = self.positions[date]
-                month_returns = {position: self.source_data.groupby(['order_book_id', 'date'])['exret'].get_group((position, date)) for position in month_positions.keys()}
-                total_return = np.array([month_positions[key] * month_returns[key] for key in month_positions.keys()]).sum()
+                month_returns = {position: float(self.source_data.groupby(['order_book_id', 'date'])['exret'].get_group((position, date))) for position in month_positions.keys()}
+                month_position_returns = {key: (month_positions[key] * month_returns[key]) for key in month_positions.keys()}
+                total_return = np.array(list(month_position_returns.values())).sum()
                 row_data = [date, self.positions[date], len(self.positions[date]), total_return]
                 self.data = self.data.append(pd.Series(row_data, index=self.data.columns), ignore_index=True)
+                self.component_returns[date] = month_position_returns
 
             #Calculate various portfolio statistics such as standard deviations and Sharpe ratio
             self.data['std'] = self.data['return'].rolling(12).std()
             self.data['Sharpe'] = self.data['return'].div(self.data['std'])
             self.data = self.data.iloc[12:, :]
-            self.stats["Portfolio Return"] = np.prod(self.data['return']+1)
+            self.stats["Portfolio Rate of Return"] = (np.prod(self.data['return']+1) - 1)/(len(self.data['return'])/12)
             self.stats["Portfolio std"] = self.data['return'].std()
-            self.stats["Portfolio Sharpe"] = self.stats["Portfolio Return"]/self.stats["Portfolio std"]
+            self.stats["Portfolio Sharpe"] = self.stats["Portfolio Rate of Return"]/self.stats["Portfolio std"]
             print("Activated.")
 
     def implement_strategy(self, positions):
@@ -85,7 +88,8 @@ class Portfolio:
         self.set_valid_stocks({date: list(self.source_data.groupby("date")["order_book_id"].get_group(date)) for date in set(self.source_data.date)})
         self.train_test_split()
         strategy = strategy_method(args)
-        self.implement_strategy(strategy.execute(source_data, self.train_dates, self.test_dates))
-        print(self.train_dates[-1])
+        self.portfolio = strategy.execute(source_data, self.train_dates, self.test_dates)
+        self.implement_strategy(self.portfolio)
         self.well_defined()
         self.activate()
+        self.stats['Mean Portfolio Size'] = np.mean([len(value) for value in self.portfolio.values()])
