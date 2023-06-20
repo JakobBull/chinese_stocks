@@ -16,7 +16,7 @@ class PortfolioSelection:
         total_weights = sum([i[1] for i in positive_top])
         portfolio = {i[0]: i[1]/total_weights for i in positive_top}
         return portfolio
-
+    
     def execute(self, returns, stds, n_stocks):
         pass
         
