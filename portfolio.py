@@ -69,7 +69,7 @@ class Portfolio:
             self.data['Sharpe'] = self.data['return'].div(self.data['std'])
             self.data = self.data.iloc[12:, :]
             self.stats["Portfolio Rate of Return"] = (np.prod(self.data['return']+1) - 1)/(len(self.data['return'])/12)
-            self.stats["Portfolio std"] = self.data['return'].std()
+            self.stats["Portfolio std"] = self.data['return'].std()*np.sqrt((len(self.data['return'])/12))
             self.stats["Portfolio Sharpe"] = self.stats["Portfolio Rate of Return"]/self.stats["Portfolio std"]
             print("Activated.")
 
@@ -87,8 +87,8 @@ class Portfolio:
         self.source_data = source_data
         self.set_valid_stocks({date: list(self.source_data.groupby("date")["order_book_id"].get_group(date)) for date in set(self.source_data.date)})
         self.train_test_split()
-        strategy = strategy_method(args)
-        self.portfolio = strategy.execute(source_data, self.train_dates, self.test_dates)
+        self.strategy = strategy_method(args)
+        self.portfolio = self.strategy.execute(source_data, self.train_dates, self.test_dates)
         self.implement_strategy(self.portfolio)
         self.well_defined()
         self.activate()
